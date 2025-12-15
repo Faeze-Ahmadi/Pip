@@ -1,3 +1,8 @@
+"""
+Main entry point for the Iran AQI IoT-ML pipeline.
+This script orchestrates data collection, storage, and visualization.
+"""
+
 import logging
 
 from .config.settings import load_settings
