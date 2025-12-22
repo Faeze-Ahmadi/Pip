@@ -39,8 +39,5 @@ The pipeline fetches live AQI data from a public API, stores historical records 
 
 This project uses real-time air quality data provided by the World Air Quality Index (AQICN) project.
 
-Data is fetched programmatically via the official AQICN API:
-https://aqicn.org/data-platform/
-
 All AQI values are based on real monitoring stations and are updated continuously.
 
