@@ -11,12 +11,14 @@ This project was developed as an academic machine learning project, with the **U
 Air quality prediction is a real-world data science problem that involves noisy data, missing values, external dependencies, and reproducibility challenges.
 
 The goal of this project is to design and implement a **robust, modular pipeline** that:
+
 - Supports multiple data sources
 - Separates data ingestion, modeling, and visualization
 - Handles external API failures gracefully
 - Produces reproducible and interpretable outputs
 
 The project is intentionally designed with **two execution modes**:
+
 - **UCI mode (core)** – fully offline, reproducible, and model-centric
 - **AQICN mode (bonus)** – optional real-time data collection from an external API
 
@@ -27,6 +29,7 @@ The project is intentionally designed with **two execution modes**:
 The key contribution of this project is **architecture**, not just modeling.
 
 Instead of building a single-script solution, the pipeline is structured to resemble a real-world data system:
+
 - Mode-based execution
 - Optional external dependencies
 - Persistent storage
@@ -99,6 +102,7 @@ This is the **primary and fully reproducible mode** of the project.
 - Output: Predictions, error analysis, and visualizations
 
 Run:
+
 ```bash
 python -m src.main --mode uci
 ```
@@ -109,10 +113,10 @@ python -m src.main --mode uci
 
 This mode implements a **real-time data collection pipeline** using the AQICN API.
 
-* Dataset: AQICN (external, online)
-* Type: Optional / bonus
-* Goal: Collect and store live AQI data for selected cities
-* Storage: SQLite database
+- Dataset: AQICN (external, online)
+- Type: Optional / bonus
+- Goal: Collect and store live AQI data for selected cities
+- Storage: SQLite database
 
 Run:
 
@@ -156,35 +160,35 @@ Histogram of prediction errors to analyze model performance.
 
 ## Libraries & Tools Used
 
-* Python 3.10+
-* NumPy
-* Pandas
-* Scikit-learn
-* Matplotlib
-* SQLite
-* ONNX
-* python-dotenv
-* argparse
-* logging
+- Python 3.10+
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+- SQLite
+- ONNX
+- python-dotenv
+- argparse
+- logging
 
 ---
 
 ## Design Highlights
 
-* Modular, mode-based execution
-* Clean separation of data, modeling, and visualization
-* Centralized configuration management
-* Persistent storage for online data
-* Robust logging and error handling
-* Reproducible offline experiments
+- Modular, mode-based execution
+- Clean separation of data, modeling, and visualization
+- Centralized configuration management
+- Persistent storage for online data
+- Robust logging and error handling
+- Reproducible offline experiments
 
 ---
 
 ## Limitations & Ongoing Work
 
-* Real-time AQICN data availability depends on external API access
-* API keys may become invalid or rate-limited
-* Online data is intentionally optional and non-blocking
+- Real-time AQICN data availability depends on external API access
+- API keys may become invalid or rate-limited
+- Online data is intentionally optional and non-blocking
 
 This project is **actively designed for extension**.
 
@@ -192,12 +196,12 @@ This project is **actively designed for extension**.
 
 ## Future Work
 
-* Stable real-time AQI forecasting using live data
-* Offline AQICN-compatible dataset snapshots
-* Time-series modeling (LSTM / Temporal CNN)
-* Advanced error analysis and explainability
-* Support for additional cities and data sources
-I would be happy to receive your application if you have a suitable dataset or a new idea for developing and improving the project.
+- Stable real-time AQI forecasting using live data
+- Offline AQICN-compatible dataset snapshots
+- Time-series modeling (LSTM / Temporal CNN)
+- Advanced error analysis and explainability
+- Support for additional cities and data sources
+  I would be happy to receive your application if you have a suitable dataset or a new idea for developing and improving the project.
 
 ---
 
@@ -208,5 +212,3 @@ The AQICN pipeline was implemented as an **independent bonus extension** and was
 The primary focus of this project is **architecture, modeling, and reproducibility**, not dependency on third-party services.
 
 ---
-
-
